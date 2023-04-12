@@ -32,19 +32,19 @@
                         <Text fill="#107ce5" layoutX="48.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(tab 1)" />
                         <Text fill="#177cb2" layoutX="227.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(tab  2)" />
                         <Text fill="#3a86b9" layoutX="410.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(tab 3)" />
-                        <ImageView fitHeight="136.0" fitWidth="129.0" layoutX="1.0" layoutY="191.0">
+                        <ImageView fitHeight="148.0" fitWidth="140.0" layoutX="14.0" layoutY="191.0">
                            <image>
-                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-10%20at%205.02.03%20PM.png" />
+                              <Image url="@../../../../../Desktop/Screen%20Shot%202023-04-10%20at%205.02.03%20PM.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="116.0" fitWidth="81.0" layoutX="207.0" layoutY="201.0">
+                        <ImageView fitHeight="147.0" fitWidth="133.0" layoutX="190.0" layoutY="191.0">
                            <image>
-                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.41.41%20PM.png" />
+                              <Image url="@../../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.41.41%20PM.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="114.0" fitWidth="128.0" layoutX="370.0" layoutY="202.0">
+                        <ImageView fitHeight="149.0" fitWidth="158.0" layoutX="360.0" layoutY="190.0">
                            <image>
-                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.42.38%20PM.png" />
+                              <Image url="@../../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.42.38%20PM.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -65,14 +65,14 @@
                         <ComboBox fx:id="cboTemps2" layoutX="313.0" layoutY="183.0" onAction="#ConvertTemps2" prefHeight="27.0" prefWidth="167.0" />
                         <ComboBox fx:id="cboTemps1" layoutX="70.0" layoutY="183.0" onAction="#ConvertTemps1" prefHeight="27.0" prefWidth="167.0" />
                         <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
-                        <ImageView fitHeight="155.0" fitWidth="243.0" layoutX="14.0" layoutY="234.0">
+                        <ImageView fitHeight="128.0" fitWidth="228.0" layoutX="14.0" layoutY="244.0">
                            <image>
-                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.43.30%20PM.png" />
+                              <Image url="@../../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.44.56%20PM.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="157.0" fitWidth="250.0" layoutX="269.0" layoutY="234.0">
+                        <ImageView fitHeight="128.0" fitWidth="231.0" layoutX="293.0" layoutY="244.0">
                            <image>
-                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.44.56%20PM.png" />
+                              <Image url="@../../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.43.30%20PM.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -93,14 +93,14 @@
                         <ComboBox fx:id="cboTemperature1" layoutX="70.0" layoutY="183.0" onAction="#ConvertTemperature1" prefHeight="27.0" prefWidth="167.0" />
                         <ComboBox fx:id="cboTemperature2" layoutX="313.0" layoutY="183.0" onAction="#ConvertTemperature2" prefHeight="27.0" prefWidth="167.0" />
                         <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
-                        <ImageView fitHeight="160.0" fitWidth="249.0" layoutX="14.0" layoutY="235.0">
+                        <ImageView fitHeight="140.0" fitWidth="200.0" layoutX="50.0" layoutY="244.0">
                            <image>
-                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.46.09%20PM.png" />
+                              <Image url="@../../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.46.15%20PM.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="158.0" fitWidth="255.0" layoutX="269.0" layoutY="235.0">
+                        <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="297.0" layoutY="249.0">
                            <image>
-                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.46.15%20PM.png" />
+                              <Image url="@../../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.46.09%20PM.png" />
                            </image>
                         </ImageView>
                      </children></AnchorPane>
@@ -120,9 +120,9 @@
                         <ComboBox fx:id="cboSN1" layoutX="70.0" layoutY="183.0" onAction="#ConvertSN1" prefHeight="27.0" prefWidth="167.0" />
                         <ComboBox fx:id="cboSN2" layoutX="312.0" layoutY="183.0" onAction="#ConvertSN2" prefHeight="27.0" prefWidth="167.0" />
                         <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
-                        <ImageView fitHeight="159.0" fitWidth="497.0" layoutX="26.0" layoutY="241.0">
+                        <ImageView fitHeight="117.0" fitWidth="474.0" layoutX="33.0" layoutY="269.0">
                            <image>
-                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.47.14%20PM.png" />
+                              <Image url="@../../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.47.14%20PM.png" />
                            </image>
                         </ImageView>
                      </children>
