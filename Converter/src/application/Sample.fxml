@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="451.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TabPane prefHeight="451.0" prefWidth="538.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Acceuil">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="#07dd52" layoutX="16.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue au convertisseur d'unités!! ">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#86c697" layoutX="16.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nous pouvons convertir...">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#1212eb" layoutX="40.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le temps" />
+                        <Text fill="#2c0ebf" layoutX="205.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La température" />
+                        <Text fill="#2f26e0" layoutX="371.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le stockage numérique" />
+                        <Text fill="#107ce5" layoutX="48.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(tab 1)" />
+                        <Text fill="#177cb2" layoutX="227.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(tab  2)" />
+                        <Text fill="#3a86b9" layoutX="410.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(tab 3)" />
+                        <ImageView fitHeight="136.0" fitWidth="129.0" layoutX="1.0" layoutY="191.0">
+                           <image>
+                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-10%20at%205.02.03%20PM.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="116.0" fitWidth="81.0" layoutX="207.0" layoutY="201.0">
+                           <image>
+                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.41.41%20PM.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="114.0" fitWidth="128.0" layoutX="370.0" layoutY="202.0">
+                           <image>
+                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.42.38%20PM.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Temps">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="#d01eaf" layoutX="113.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conversion du Temps" wrappingWidth="312.310546875">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtTemps2" layoutX="313.0" layoutY="128.0" onKeyReleased="#ConvertTemps2" onKeyTyped="#verifNum" prefHeight="27.0" prefWidth="167.0" />
+                        <TextField fx:id="txtTemps1" layoutX="66.0" layoutY="128.0" onKeyReleased="#ConvertTemps1" onKeyTyped="#verifNum" prefHeight="27.0" prefWidth="167.0" />
+                        <ComboBox fx:id="cboTemps2" layoutX="313.0" layoutY="183.0" onAction="#ConvertTemps2" prefHeight="27.0" prefWidth="167.0" />
+                        <ComboBox fx:id="cboTemps1" layoutX="70.0" layoutY="183.0" onAction="#ConvertTemps1" prefHeight="27.0" prefWidth="167.0" />
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+                        <ImageView fitHeight="155.0" fitWidth="243.0" layoutX="14.0" layoutY="234.0">
+                           <image>
+                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.43.30%20PM.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="157.0" fitWidth="250.0" layoutX="269.0" layoutY="234.0">
+                           <image>
+                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.44.56%20PM.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Température">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="#11c9bd" layoutX="72.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conversion de la température">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtTemperature1" layoutX="66.0" layoutY="128.0" onKeyReleased="#ConvertTemperature1" onKeyTyped="#verifNum" prefHeight="27.0" prefWidth="167.0" />
+                        <TextField fx:id="txtTemperature2" layoutX="313.0" layoutY="128.0" onKeyReleased="#ConvertTemperature2" onKeyTyped="#verifNum" prefHeight="27.0" prefWidth="167.0" />
+                        <ComboBox fx:id="cboTemperature1" layoutX="70.0" layoutY="183.0" onAction="#ConvertTemperature1" prefHeight="27.0" prefWidth="167.0" />
+                        <ComboBox fx:id="cboTemperature2" layoutX="313.0" layoutY="183.0" onAction="#ConvertTemperature2" prefHeight="27.0" prefWidth="167.0" />
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+                        <ImageView fitHeight="160.0" fitWidth="249.0" layoutX="14.0" layoutY="235.0">
+                           <image>
+                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.46.09%20PM.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="158.0" fitWidth="255.0" layoutX="269.0" layoutY="235.0">
+                           <image>
+                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.46.15%20PM.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Stockage numérique">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="#990be5" layoutX="26.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conversion du stockage numérique  ">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtSN1" layoutX="66.0" layoutY="128.0" onKeyReleased="#ConvertSN1" onKeyTyped="#verifNum" prefHeight="27.0" prefWidth="167.0" />
+                        <TextField fx:id="txtSN2" layoutX="313.0" layoutY="128.0" onKeyReleased="#ConvertSN2" onKeyTyped="#verifNum" />
+                        <ComboBox fx:id="cboSN1" layoutX="70.0" layoutY="183.0" onAction="#ConvertSN1" prefHeight="27.0" prefWidth="167.0" />
+                        <ComboBox fx:id="cboSN2" layoutX="312.0" layoutY="183.0" onAction="#ConvertSN2" prefHeight="27.0" prefWidth="167.0" />
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+                        <ImageView fitHeight="159.0" fitWidth="497.0" layoutX="26.0" layoutY="241.0">
+                           <image>
+                              <Image url="@../../../../Desktop/Screen%20Shot%202023-04-11%20at%207.47.14%20PM.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
